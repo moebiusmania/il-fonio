@@ -1,0 +1,39 @@
+<!-- Imports polymer -->
+<link rel="import" href="./../bower_components/polymer/polymer.html">
+
+<!-- Defines element markup -->
+<dom-module id="il-fonio">
+    <template>
+      <p><strong>il Fonio</strong> says <i>"[[phrase]]"</i></p>
+    </template>
+
+    <!-- Registers custom element -->
+    <script>
+    Polymer({
+        is: 'il-fonio',
+        properties: {
+          phrase:{
+            type: String,
+          },
+          collection: {
+            type: Array,
+            value: [
+              "Favoloooosoooooo",
+              "I scesci!"
+            ]
+          }
+        },
+
+        saySomething: function(){
+          var n = Math.floor(Math.random() * this.collection.length);
+          this.phrase = this.collection[n];
+        },
+
+        // Fires when the element was inserted into the document
+        attached: function() {
+          console.log('<il-fonio> has been attached in the document! WATCH OUT!!!');
+          this.saySomething();
+        }
+    });
+    </script>
+</dom-module>

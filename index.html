@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;il-fonio&gt; demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Bootstrap (optional) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Google Fonts - Open sans (optional) -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+
+  <!-- WebComponents Polyfills (required) -->
+  <script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
+  <!-- <il-fonio> -->
+  <link rel="import" href="./ilfonio/il-fonio.html">
+
+  <style>
+  h1{
+    font-weight: 800;
+    font-size: 3em;
+  }
+  h1,p{
+    font-family: 'Open Sans', sans-serif;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>&lt;il-fonio&gt; demo</h1>
+    <hr>
+    <p>Just include the webcomponents polyfill (<i>not needed in Chrome</i>) and use this tag...</p>
+    <p><code>&lt;il-fonio&gt;&lt;/il-fonio&gt;</code></p>
+    <p>... and let the magic happen!</p>
+    <il-fonio></il-fonio>
+  </div>
+
+</body>
+</html>
