@@ -8,10 +8,14 @@ Download the [.zip file](https://github.com/moebiusmania/il-fonio/archive/master
 
 Include the Web Components Polyfill (using the one included in the repo or your own copy)
 
-  &lt;script src="bower_components/webcomponentsjs/webcomponents.min.js"&gt;&lt;/script&gt;
+```html
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+```
 
 Then import the custom tag
 
-  &lt;link rel="import" href="ilfonio/il-fonio.html" /&gt;
+```html
+<link rel="import" href="ilfonio/il-fonio.html" />
+```
 
 Now you're ready to use it in your HTML page!
