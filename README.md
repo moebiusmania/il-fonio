@@ -1,21 +1,21 @@
 # &lt;il-fonio&gt;
-A web-component from **Viareggio**!
+A web-component (*v1 spec!*) from **Viareggio**!
 
 Live demo [here](http://moebiusmania.github.io/il-fonio/).
 
 ### How to use
 Download the [.zip file](https://github.com/moebiusmania/il-fonio/archive/master.zip) or clone this repo.
 
-Include the Web Components Polyfill (using the one included in the repo or your own copy)
+Include the [Web Components v1 Polyfill](https://github.com/webcomponents/webcomponentsjs)
 
 ```html
-<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<script src="[package-manager-folder]/webcomponentsjs/webcomponents-lite.min.js"></script>
 ```
 
 Then import the custom tag
 
 ```html
-<link rel="import" href="ilfonio/il-fonio.html" />
+<script src="./app/ilfonio/index.js"></script>
 ```
 
 Now you're ready to use it in your HTML page!

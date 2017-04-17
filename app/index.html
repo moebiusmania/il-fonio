@@ -10,11 +10,11 @@
   <!-- Google Fonts - Open sans (optional) -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
 
-  <!-- WebComponents Polyfills (required) -->
-  <script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <!-- WebComponents v1 Polyfills (required) -->
+  <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-lite.js"></script>
 
   <!-- <il-fonio> -->
-  <link rel="import" href="./ilfonio/il-fonio.html">
+  <script src="./ilfonio/index.js"></script>
 
   <style>
   h1{
@@ -42,7 +42,9 @@
     <p>Just include the webcomponents polyfill (<i>not needed in Chrome</i>) and use this tag...</p>
     <p><code>&lt;il-fonio&gt;&lt;/il-fonio&gt;</code></p>
     <p>... and let the magic happen!</p>
+
     <il-fonio></il-fonio>
+
     <p><small>(check the code for the only method available!)</small></p>
     <hr>
     <button class="btn btn-default btn-lg">
@@ -52,10 +54,10 @@
 
   <script>
 
-  var fonio = document.querySelector('il-fonio');
-  var btn = document.querySelector('.btn');
+  const fonio = document.querySelector('il-fonio');
+  const btn = document.querySelector('.btn');
 
-  btn.addEventListener('click', function(evt){
+  btn.addEventListener('click', (evt) => {
     fonio.saySomething();
   });
 

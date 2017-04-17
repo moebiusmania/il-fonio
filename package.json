@@ -1,0 +1,32 @@
+{
+  "name": "il-fonio",
+  "version": "2.0.0",
+  "description": "A webcomponent from Viareggio!",
+  "main": "app/il-fonio/index.js",
+  "scripts": {
+    "start": "http-server ./app -s -p 8081",
+    "deploy": "gh-pages -d app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moebiusmania/il-fonio.git"
+  },
+  "keywords": [
+    "web",
+    "component",
+    "webcomponent",
+    "fonio",
+    "viareggio",
+    "funny"
+  ],
+  "author": "Salvatore Laisa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moebiusmania/il-fonio/issues"
+  },
+  "homepage": "https://github.com/moebiusmania/il-fonio#readme",
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "http-server": "^0.9.0"
+  }
+}
