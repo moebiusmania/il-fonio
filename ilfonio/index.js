@@ -19,13 +19,18 @@ class IlFonio extends HTMLElement {
 
   connectedCallback(){
     console.log('<il-fonio> has been attached in the document! WATCH OUT!!!');
+    this.innerHTML = `
+      <p class="fonio-say">
+        <strong>il Fonio</strong> says 
+        <i>...</i>
+      </p>
+    `;
+    this.content = this.querySelector('p.fonio-say i');
     this.saySomething();
   }
 
   _render(){
-    this.innerHTML = `
-      <p><strong>il Fonio</strong> says <i>"${this.phrase}"</i></p>
-    `;
+    this.content.innerHTML = `"${this.phrase}"`;
   }
 
   saySomething(){
