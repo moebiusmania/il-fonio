@@ -13,7 +13,10 @@ class IlFonio extends HTMLElement {
       "Kasciukko",
       "A modino!",
       "Nun si può dire più niente...",
-      "Stupeeendo!"
+      "Stupeeendo!",
+      "Bono bao",
+      "E' grijo",
+      "Un projetto"
     ];
   }
 
